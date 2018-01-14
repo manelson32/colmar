@@ -1,0 +1,85 @@
+/* Universal Styles */
+
+/* Border for all divs during development*/
+div {
+  border: 1px dashed lightgreen;
+}
+
+html {
+  font-size: 16px;
+
+}
+
+.flexcontent {
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* Header Section */
+
+header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: white;
+}
+
+header .logo {
+  flex: 1;
+}
+
+.logo img, .tablet img {
+  height: 3rem;
+}
+
+.logo .flexcontent {
+  height: 4rem;
+  padding: 0rem 1.5rem;
+}
+
+.logo p, .logo span {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+}
+.logo p {
+  font-style: normal;
+  color: lightgray;
+}
+
+.logo span {
+  font-weight: bold;
+}
+
+nav {
+  padding-right: 1.5rem;
+}
+
+nav li {
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+
+header .tablet {
+  display: none;
+}
+
+@media only screen and (max-width: 720px) {
+  /*header nav {
+    display: none;*/
+  }
+  header .tablet ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .logo .desktop {
+    display: none;
+  }
+}
