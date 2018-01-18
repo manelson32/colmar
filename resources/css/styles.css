@@ -1,12 +1,14 @@
-/* Universal Styles */
+
 
 /* Border for all divs during development*/
 div {
   border: 1px dashed lightgreen;
 }
 
+/* Universal Styles */
 html {
   font-size: 16px;
+  font-family: sans-serif;
 
 }
 
@@ -15,16 +17,57 @@ html {
   align-items: center;
 }
 
+.thirtyfive {
+  width: 35%;
+}
+
+.forty {
+  width: 40%;
+}
+
+.sixty {
+  width: 60%;
+}
+
+.sixtyfive {
+  width: 65%;
+}
+/*
+.sixty img {
+  max-width: 95%;
+  height: auto;
+  display: block;
+  padding: 2.5rem 2.5%;
+}
+*/
+
+/* Universal image styles */
+.img {
+  height: auto;
+  display: block;
+  overflow: hidden;
+}
+
+.large {
+  max-width: 95%;
+  padding: 2.5rem 2.5%;
+}
+
+.small {
+  max-width: 100%;
+  padding: 1rem;
+}
+
 
 
 /* Header Section */
-
 header {
   position: fixed;
   z-index: 5;
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+
 }
 
 header .logo {
@@ -83,3 +126,32 @@ header .tablet {
     display: none;
   }
 }
+
+/*Call to Action section*/
+.cta {
+  position: relative;
+  top: 4rem;
+  background-color: gray;
+
+}
+
+.cta h1 {
+  font-size: 2.5rem;
+}
+/*
+.image-container {
+  width: 60%;
+  height: auto;
+}
+*/
+
+/* Quotes and Features section */
+
+/* Courses section */
+.courses {
+  flex-wrap: wrap;
+}
+
+/* Thesis exhibit section */
+
+/* Footer section */
