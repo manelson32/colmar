@@ -8,7 +8,7 @@ div {
 /* Universal Styles */
 html {
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -31,6 +31,13 @@ html {
 
 .sixtyfive {
   width: 65%;
+}
+
+.button {
+  background-color: #4a4a4a;
+  color: white;
+  border-radius: 5px;
+
 }
 /*
 .sixty img {
@@ -131,13 +138,48 @@ header .tablet {
 .cta {
   position: relative;
   top: 4rem;
-  background-color: gray;
+  background-color: lightgray;
 
+}
+
+.cta .textcontent {
+  width: 75%;
+  padding: 2rem;
 }
 
 .cta h1 {
-  font-size: 2.5rem;
+  font-size: 3.25rem;
+  line-height: 4rem;
+  font-weight: 800;
+  color: hsl( 0, 0%, 25%);
 }
+
+.cta h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+
+.cta h1, .cta h2 {
+  margin-bottom: 2rem;
+}
+
+.cta .button {
+  padding: 1.25rem 5rem;
+  text-align: center;
+  font-size: 1.5rem;
+
+
+}
+/*
+.cta a {
+
+  font-size: 1.5rem;
+
+
+}
+*/
 /*
 .image-container {
   width: 60%;
