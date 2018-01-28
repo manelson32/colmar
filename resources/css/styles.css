@@ -2,14 +2,72 @@
 
 /* Border for all divs during development*/
 div {
-  border: 1px dashed lightgreen;
+  border: 1px dashed orange;
 }
 
 /* Universal Styles */
 html {
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  color: hsl( 0, 0%, 25%);
+}
 
+p {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+
+h1 {
+  font-size: 3.25rem;
+  line-height: 3.75rem;
+
+}
+
+h2 {
+  font-size: 2.66rem;
+  line-height: 3.10rem;
+
+
+}
+
+h3 {
+  font-size: 2.33rem;
+  line-height: 2.8rem;
+
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+
+}
+
+h5 {
+  font-size: 1.66rem;
+  line-height: 2.1rem;
+}
+
+h6 {
+  font-size: 1.33rem;
+  line-height: 1.8rem;
+}
+
+h1,h2 {
+  font-weight: 800;
+  padding-bottom: 3rem;
+}
+
+h3,h4,h5,h6 {
+  font-weight: 600;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: #4a4a4a;
+
+}
+
+.section {
+  padding: 1rem 0;
 }
 
 .flexcontent {
@@ -17,20 +75,44 @@ html {
   align-items: center;
 }
 
+.textcontent {
+  padding-left: 1rem;
+}
+
+.center {
+  text-align: center;
+
+}
+
+.left {
+  text-align: left;
+  padding: 0 1.5rem;
+}
+
+.main {
+  position: relative;
+  top: 4rem;
+}
+
 .thirtyfive {
-  width: 35%;
+  max-width: 35%;
 }
 
 .forty {
-  width: 40%;
+  max-width: 40%;
 }
 
 .sixty {
-  width: 60%;
+  max-width: 60%;
+  padding: 1rem 0;
 }
 
+/*.sixty .image-container {
+  padding: 0 1.5rem;
+}*/
+
 .sixtyfive {
-  width: 65%;
+  max-width: 65%;
 }
 
 .button {
@@ -49,6 +131,13 @@ html {
 */
 
 /* Universal image styles */
+.image-container {
+  /*width: 60%;
+  height: auto;
+  padding: 1rem;*/
+
+}
+
 .img {
   height: auto;
   display: block;
@@ -56,13 +145,14 @@ html {
 }
 
 .large {
-  max-width: 95%;
-  padding: 2.5rem 2.5%;
+  max-width: 100%;
+  /*padding: 0 1.5rem;*/
+  /*margin: 1rem;*/
 }
 
 .small {
   max-width: 100%;
-  padding: 1rem;
+  /*padding: 0.66rem;*/
 }
 
 
@@ -87,13 +177,13 @@ header .logo {
 
 .logo .flexcontent {
   height: 4rem;
-  padding: 0rem 1.5rem;
+  padding: 0rem 1rem;
 }
 
 .logo p, .logo span {
-  font-family: sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.33rem;
 }
+
 .logo p {
   font-style: normal;
   color: lightgray;
@@ -104,12 +194,12 @@ header .logo {
 }
 
 nav {
-  padding-right: 1.5rem;
+  padding-right: 1rem;
 }
 
 nav li {
-  padding-left: 1rem;
-  font-size: 1.2rem;
+  padding-left: 0.66rem;
+  font-size: 1rem;
 }
 
 header .tablet {
@@ -136,58 +226,88 @@ header .tablet {
 
 /*Call to Action section*/
 .cta {
-  position: relative;
-  top: 4rem;
   background-color: lightgray;
-
 }
 
 .cta .textcontent {
-  width: 75%;
-  padding: 2rem;
+  width: 70%;
+
 }
 
-.cta h1 {
-  font-size: 3.25rem;
-  line-height: 4rem;
-  font-weight: 800;
-  color: hsl( 0, 0%, 25%);
+/*.cta h1 {
+
 }
 
-.cta h2 {
-  font-size: 2rem;
-  line-height: 3rem;
-  color: #4a4a4a;
-  font-weight: bold;
-}
+.cta h3 {
+  line-height: 2.5rem;
+}*/
 
-.cta h1, .cta h2 {
-  margin-bottom: 2rem;
+.cta h5, .cta h1 {
+  padding-bottom: 2.75rem;
 }
 
 .cta .button {
-  padding: 1.25rem 5rem;
+  padding: 1rem;
   text-align: center;
   font-size: 1.5rem;
-
-
 }
+
 /*
 .cta a {
-
   font-size: 1.5rem;
-
-
-}
-*/
-/*
-.image-container {
-  width: 60%;
-  height: auto;
 }
 */
 
 /* Quotes and Features section */
+.features.flexcontent {
+  align-items: start;
+
+}
+
+.quote {
+  flex: 1;
+  /*padding: 1rem 1rem;
+  margin: 1rem 1rem;*/
+}
+
+/*.quote .left {
+  padding: 0 1rem;
+}*/
+
+.quote .textcontent {
+  padding: 2rem 0 1.5rem 0;
+}
+
+.quote h2 {
+  padding-bottom: 1.5rem;
+}
+
+.quote p {
+  font-size: 1.3rem;
+  padding-bottom: 2rem;
+}
+
+.quote span {
+  font-weight: 600;
+}
+
+.feature .image-container {
+  padding: 1rem;
+}
+
+.feature h3 {
+
+}
+
+.feature p {
+  padding: .5rem 0;
+}
+.feature a {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  color: blue;
+
+}
 
 /* Courses section */
 .courses {
