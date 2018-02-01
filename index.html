@@ -1,3 +1,11 @@
+<!-- This HTML document features:
+     * a fixed header section with navigation links
+     * a main content section offset downward the height of the fixed header
+     * three flexbox content sections each featuring 60/40 subsections containing a mix of images and text
+     * one flexbox content section featuring six flex items neatly wrapping to two rows at full desktop screen-width
+     * a simple footer with navigation links
+-->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -64,7 +72,11 @@
       </div>
     </header>
 
-<!-- Main content area. Remember: with a fixed header, the top parameter applied to main div will shift all content down by top amount. -->
+<!-- Main content supersection
+
+     Note to self: with a fixed header, don't use multiple divs below - put them all in one main-content division like so.
+     The top parameter applied to main div will shift all content down by top amount. Easy.
+-->
     <div class="main">
 
       <!-- Call to Action section -->
