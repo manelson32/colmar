@@ -66,14 +66,17 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .section {
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .flexcontent {
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
 }
 
+.card {
+  align-items: center;
+}
 .textcontent {
   padding: 1rem 1.5rem 1.5rem 1rem;
   text-align: left;
@@ -112,7 +115,7 @@ h1,h2,h3,h4,h5,h6 {
 }*/
 
 .sixtyfive {
-  max-width: 65%;
+  width: 65%;
 }
 
 .button {
@@ -141,7 +144,7 @@ h1,h2,h3,h4,h5,h6 {
 .img {
   height: auto;
   display: block;
-  overflow: hidden;
+  /*overflow: hidden;*/
   max-width: 100%;
 }
 
@@ -227,6 +230,7 @@ header .tablet {
 /*Call to Action section*/
 .cta {
   background-color: lightgray;
+  align-items: center;
 }
 
 .cta .textcontent {
@@ -334,9 +338,36 @@ header .tablet {
 
 .course span {
   padding: 0.75rem 0;
-
 }
 
 /* Thesis exhibit section */
+.thesis .textcontent {
+  padding-left: 2.5%;
+  padding-top: 1.5rem;
+}
+.thesis img {
+  width: 30%;
+  padding: 2.5%;
+}
+
+.thesis video {
+  display: block;
+  height: auto;
+  width: 95%;
+  padding: 0 2.5%;
+}
+
+.thesis .card:first-child {
+  background-color: lightgray;
+}
+
+.exhibit.sixty {
+  padding-top: 0;
+}
+
+.exhibit.sixty p {
+  padding-top: 1rem;
+}
+
 
 /* Footer section */
