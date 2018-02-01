@@ -69,6 +69,9 @@ nav {
   padding-right: 1.5rem;
 }
 
+nav ul {
+
+}
 nav li {
   padding-left: 1rem;
 }
@@ -171,48 +174,47 @@ nav li {
 
 /* Header Section */
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
   z-index: 5;
   width: 100%;
+  height: 5.5rem;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  border: 1px dashed red;
 
 }
 
-header .flexcontent {
+.logo {
   align-items: center;
 }
 
-header .logo {
-  flex: 1;
-}
-
-.logo img, .tablet img {
+header img, .tablet img {
   height: 4rem;
+  padding-left: 1.25rem;
 }
 
-.logo .flexcontent {
-  height: 5.5rem;
-  padding: 0rem 1rem;
-}
 
-.logo p, .logo span {
+header span {
+  font-style: normal;
+  color: lightgray;
   font-size: 2rem;
 }
 
-.logo p {
-  font-style: normal;
-  color: lightgray;
-}
-
-.logo span {
+header span:nth-child(2n+2) {
   font-weight: bold;
+  color: black;
 }
 
 header nav {
   font-size: 1.4rem;
   font-weight: 600;
+
 }
+
+
 
 header .tablet {
   display: none;
