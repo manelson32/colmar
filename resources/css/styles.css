@@ -105,7 +105,7 @@ nav li {
 
 .main {
   position: relative;
-  top: 5rem;
+  top: 5.5rem;
 }
 
 .thirtyfive {
@@ -340,21 +340,31 @@ header .tablet {
   background-color: lightgray;
 }
 
+.learn h2 {
+  padding-bottom: 0;
+}
+
 .courses {
   flex-wrap: wrap;
   align-items: normal;
-  padding: 0 3.5rem;
+  justify-content: space-between;
+  padding: 0 4.5rem;
 
 }
 
 .course {
-  flex-basis: 30%;
+  flex-basis: 31%;
   flex-shrink: 1;
-  margin: 0 1rem 2rem 1rem;
+  /*margin: 0 1rem 2rem 1rem;*/
+  margin-top: 2rem;
   background-color: white;
 }
 .course img {
   width: 100%;
+}
+
+.course .textcontent {
+  padding: 1rem 1.5rem 1.5rem 1rem;
 }
 
 .course span {
@@ -395,12 +405,13 @@ header .tablet {
 /* Footer section */
 footer {
   height: 5rem;
-  align-items: center;
+  /*align-items: center;*/
   border-top: 1px solid lightgray;
 }
 
 .copyright {
   flex: 1;
+  /*padding-top: 1rem;*/
 
 }
 
@@ -408,4 +419,8 @@ footer {
   font-size: 1rem;
   line-height: normal;
   padding-left: 1.5rem;
+}
+
+.copyright, footer nav {
+  padding-top: 1rem;
 }
