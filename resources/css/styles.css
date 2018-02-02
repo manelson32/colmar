@@ -82,15 +82,14 @@ nav li {
 
 .flexcontent {
   display: flex;
-  /*align-items: center;*/
 }
 
 .card {
-  align-items: center;
+  /*align-items: center;*/
 }
 
 .textcontent {
-  padding: 1rem 1.5rem 1.5rem 1rem;
+  /*padding: 1rem 1.5rem 1.5rem 1rem;*/
   text-align: left;
 }
 
@@ -117,9 +116,13 @@ nav li {
   max-width: 40%;
 }
 
+.forty .flexcontent {
+  align-items: center;
+}
+
 .sixty {
-  max-width: 60%;
-  padding: 1rem 0;
+  width: 60%;
+  /*padding: 1rem 0;*/
 }
 
 /*.sixty .image-container {
@@ -136,14 +139,14 @@ nav li {
   border-radius: 5px;
 
 }
-/*
-.sixty img {
-  max-width: 95%;
-  height: auto;
-  display: block;
-  padding: 2.5rem 2.5%;
+
+.sixty img, .sixty .textcontent {
+  width: 95%;
+  /*height: auto;
+  display: block;*/
+  padding: 0rem 2.5%;
 }
-*/
+
 
 /* Universal image styles */
 .image-container {
@@ -183,23 +186,22 @@ header {
   height: 5.5rem;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
-  border: 1px dashed red;
-
 }
 
 .logo {
   align-items: center;
+  padding-left: 1.5rem;
 }
 
 header img, .tablet img {
   height: 4rem;
-  padding-left: 1.25rem;
+
 }
 
 
 header span {
   font-style: normal;
-  color: lightgray;
+  color: gray;
   font-size: 2rem;
 }
 
@@ -290,8 +292,12 @@ header .tablet {
   padding: 0 1rem;
 }*/
 
-.quote .textcontent {
-  padding: 2rem 0 1.5rem 0;
+.quote .textcontent {/*
+  padding: 2rem 0 1.5rem 0;*/
+}
+
+.quote img {
+  padding-bottom: 2rem;
 }
 
 .quote h2 {
@@ -305,6 +311,10 @@ header .tablet {
 
 .quote span {
   font-weight: 600;
+}
+
+.feature.flexcontent:nth-child(1n+3) {
+  background-color: lightgray;
 }
 
 .feature .image-container {
@@ -352,11 +362,12 @@ header .tablet {
 }
 
 /* Thesis exhibit section */
-.thesis .textcontent {
+.thesis .textcontent {/*
   padding-left: 2.5%;
-  padding-top: 1.5rem;
+  padding-top: 1.5rem;*/
 }
-.thesis img {
+
+.forty img {
   width: 30%;
   padding: 2.5%;
 }
@@ -365,7 +376,7 @@ header .tablet {
   display: block;
   height: auto;
   width: 95%;
-  padding: 0 2.5%;
+  padding: 0 2.5% 2rem;
 }
 
 .thesis .card:first-child {
