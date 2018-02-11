@@ -77,7 +77,7 @@ nav li {
 }
 
 .section {
-  padding: 2rem 0;
+  padding: 2% 0;
 }
 
 .flexcontent {
@@ -195,7 +195,6 @@ header {
 
 header img, .tablet img {
   height: 4rem;
-
 }
 
 
@@ -213,24 +212,42 @@ header span:nth-child(2n+2) {
 header nav {
   font-size: 1.4rem;
   font-weight: 600;
-
 }
-
-
 
 header .tablet {
   display: none;
 }
 
 @media only screen and (max-width: 720px) {
-  /*header nav {
-    display: none;*/
-  }
+  header span.desktop {
+    display: none;
+  }/*
   header .tablet ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+  }*/
+}
+
+@media only screen and (max-width: 900px) {/*
+  .desktop .flexcontent {
+    display: none;
+  }*/
+  header nav.desktop {
+    display: none;
+  }
+  header nav.tablet {
+    display: inline;/*
+    justify-content: space-between;;
+    align-items: center;*/
+    width: 100%;
+  }
+  header .tablet ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*width: 100%;*/
   }
 }
 
@@ -248,7 +265,8 @@ header .tablet {
 
 .cta .textcontent {
   width: 70%;
-  padding-left: 0;
+  min-width: 430px;
+
 
 }
 
@@ -275,6 +293,30 @@ header .tablet {
   font-size: 1.5rem;
 }
 */
+@media only screen and (max-width: 1100px) {
+  .cta {
+    flex-direction: column;
+    /*align-items: stretch;*/
+  }
+  .cta.section, .cta img {
+    padding: 0;
+  }
+  .cta .sixty {
+    width: 100%;
+  }
+  .cta img {
+    width: 100%;
+  }
+  .cta .forty {
+    max-width: none;
+  }
+  .cta .textcontent {
+    width: 100%;
+    padding: 2rem 1rem;
+
+  }
+
+}
 
 /* Quotes and Features section */
 .features.flexcontent {
