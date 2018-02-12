@@ -490,7 +490,7 @@ header .tablet {
 
 
 /* Thesis exhibit section */
-.thesis {
+.thesis.section {
   margin-top: 1rem;
 }
 .thesis .textcontent {/*
