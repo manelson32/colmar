@@ -1,117 +1,72 @@
-
-
-/* Border for all divs during development*/
-div {
-  /*border: 1px dashed orange;*/
-}
-
 /* Universal Styles */
+
 html {
-  /*font-size: 16px;*/
   font-family: 'Raleway', sans-serif;
   color: hsl( 0, 0%, 25%);
 }
-
 p, span {
   font-size: 1.3em;
   line-height: 1.9rem;
 }
-
 h1 {
   font-size: 3.25em;
-
   padding-bottom: 3em;
 }
-
 h2 {
   font-size: 2.66em;
   line-height: 3.10rem;
   padding-bottom: 2rem;
 }
-
 h3 {
   font-size: 2.33rem;
   line-height: 2.8rem;
-
 }
-
 h4 {
   font-size: 2rem;
   line-height: 2.5rem;
-
 }
-
 h5 {
   font-size: 1.66em;
   line-height: 1.5em;
 }
-
 h6 {
   font-size: 1.33rem;
   line-height: 1.8rem;
 }
-
 h1,h2 {
   font-weight: 800;
-
 }
-
 h3,h4,h5,h6 {
   font-weight: 600;
 }
-
 h1,h2,h3,h4,h5,h6 {
   color: #4a4a4a;
-
 }
-
 nav {
   padding-right: 1.5rem;
-}
-
-nav ul {
-
 }
 nav li {
   padding-left: 1rem;
 }
-
 .section {
   padding: 1em 0;
 }
-
 .flexcontent {
   display: flex;
 }
-
-.card {
-  /*align-items: center;*/
-}
-
 .textcontent {
-  /*padding: 1rem 1.5rem 1.5rem 1rem;*/
   text-align: left;
 }
-
 .center {
   text-align: center;
-
 }
-
-.left {
-  /*text-align: left;*/
-/*  padding: 0 1.5rem;*/
-}
-
 .main {
   position: relative;
   top: 5.5rem;
 }
-
 .thirtyfive {
   max-width: 35%;
 }
-
 .forty {
   max-width: 40%;
 }
@@ -124,10 +79,6 @@ nav li {
   width: 60%;
   padding: 1em 0;
 }
-
-/*.sixty .image-container {
-  padding: 0 1.5rem;
-}*/
 
 .sixtyfive {
   width: 65%;
@@ -147,36 +98,23 @@ nav li {
 
 .sixty img, .sixty .textcontent {
   width: 95%;
-  /*height: auto;
-  display: block;*/
   padding: 0 1rem;
 }
 
 
 /* Universal image styles */
-.image-container {
-  /*width: 60%;
-  height: auto;
-  padding: 1rem;*/
 
-}
 
 .img {
   height: auto;
   display: block;
-  /*overflow: hidden;*/
   max-width: 100%;
 }
 
 .large {
   padding: 0 1.5rem;
-  /*margin: 1rem;*/
 }
 
-.small {
-
-  /*padding: 0.66rem;*/
-}
 .mobile {
   display: none;
 }
@@ -184,6 +122,7 @@ nav li {
 
 
 /* Header Section */
+
 header {
   display: flex;
   align-items: center;
@@ -240,33 +179,20 @@ header .tablet {
     top: 4rem;
   }
 
-  /*
-  header .tablet ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }*/
 }
 
-@media only screen and (max-width: 900px) {/*
-  .desktop .flexcontent {
-    display: none;
-  }*/
+@media only screen and (max-width: 900px) {
   header nav.desktop {
     display: none;
   }
   header nav.tablet {
-    display: inline;/*
-    justify-content: space-between;;
-    align-items: center;*/
+    display: inline;
     width: 100%;
   }
   header .tablet ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /*width: 100%;*/
   }
 }
 
@@ -277,6 +203,7 @@ header .tablet {
 }
 
 /*Call to Action section*/
+
 .cta {
   background-color: lightgray;
   align-items: center;
@@ -286,17 +213,7 @@ header .tablet {
   width: 70%;
   min-width: 430px;
   line-height: 3.75em;
-
-
 }
-
-/*.cta h1 {
-
-}
-
-.cta h3 {
-  line-height: 2.5rem;
-}*/
 
 .cta h5, .cta h1 {
   padding-bottom: 2.75rem;
@@ -308,15 +225,9 @@ header .tablet {
   font-size: 1.5rem;
 }
 
-/*
-.cta a {
-  font-size: 1.5rem;
-}
-*/
 @media only screen and (max-width: 1100px) {
   .cta {
     flex-direction: column;
-    /*align-items: stretch;*/
   }
   .cta.section, .cta img {
     padding: 0;
@@ -343,23 +254,13 @@ header .tablet {
 }
 
 /* Quotes and Features section */
+
 .features.flexcontent {
   align-items: start;
-
 }
 
 .quote {
   flex: 1;
-  /*padding: 1rem 1rem;
-  margin: 1rem 1rem;*/
-}
-
-/*.quote .left {
-  padding: 0 1rem;
-}*/
-
-.quote .textcontent {/*
-  padding: 2rem 0 1.5rem 0;*/
 }
 
 .quote img {
@@ -385,10 +286,6 @@ header .tablet {
 
 .feature .image-container {
   padding: 1rem;
-}
-
-.feature h3 {
-
 }
 
 .feature p {
@@ -433,6 +330,7 @@ header .tablet {
 }
 
 /* Learn section */
+
 .learn {
   background-color: lightgray;
 }
@@ -455,8 +353,7 @@ header .tablet {
   flex-basis: 31%;
   flex-shrink: 1;
   min-width: 275px;
-  /*margin: 0 1rem 2rem 1rem;*/
-  margin-top: 2rem;
+  margin: 2rem 1rem 0 1rem;
   background-color: white;
 }
 .course img {
@@ -490,12 +387,9 @@ header .tablet {
 
 
 /* Thesis exhibit section */
+
 .thesis.section {
   margin-top: 1rem;
-}
-.thesis .textcontent {/*
-  padding-left: 2.5%;
-  padding-top: 1.5rem;*/
 }
 
 .forty img {
@@ -537,16 +431,14 @@ header .tablet {
 }
 
 /* Footer section */
+
 footer {
   height: 5rem;
-  /*align-items: center;*/
   border-top: 1px solid lightgray;
 }
 
 .copyright {
   flex: 1;
-  /*padding-top: 1rem;*/
-
 }
 
 .copyright p {
